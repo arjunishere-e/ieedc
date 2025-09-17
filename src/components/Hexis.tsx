@@ -48,7 +48,7 @@ const Iot: React.FC = () => {
       </div>
 
       <h1 style={{ textAlign: "center", padding: "2rem 0", color: "#fff",fontFamily: "'Cinzel', serif"}}>
-        IoT Event Photos
+        Hexis Event Photos
       </h1>
 
       {/* Grid of photos */}
