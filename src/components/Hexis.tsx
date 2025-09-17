@@ -3,7 +3,7 @@ import DotGrid from "./DotGrid";
 
 // Dynamically import all JPG images from assets/iot
 const images = Object.values(
-  import.meta.glob("../assets/iot/*.{jpg,jpeg,JPG,JPEG}", { eager: true })
+  import.meta.glob("../assets/hexis/*.{jpg,jpeg,JPG,JPEG}", { eager: true })
 ).map((mod: any) => mod.default);
 
 const Iot: React.FC = () => {
