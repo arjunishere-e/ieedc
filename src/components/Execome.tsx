@@ -9,10 +9,12 @@ const execomMembers = [
   { id: 6, name: "NIKHIL THOMAS", designation: "Finance Lead", image: "/assets/execom/nikhil.jpg" },
   { id: 7, name: "MOHAMMED SHADIRVAN", designation: "Technology Lead", image: "/assets/execom/shadirvan.jpg" },
   { id: 8, name: "GOWRI NANDHANA", designation: "Innovation Lead", image: "/assets/execom/gowri.jpg" },
-  { id: 9, name: "VISHNU GOPAL", designation: "Branding & Marketing Lead", image: "/assets/execom/vishnu.jpg" },
-  { id: 10, name: "ANCY BIJU", designation: "Women Innovation Lead", image: "/assets/execom/ancy.jpg" },
+  
+  { id: 9, name: "ANCY BIJU", designation: "Women Innovation Lead", image: "/assets/execom/ancy.jpg" },
+  { id: 10, name: "VISHNU GOPAL", designation: "Branding & Marketing Lead", image: "/assets/execom/vishnu.jpg" },
   { id: 11, name: "ABHI KRISHNA", designation: "Quality & Operation Lead", image: "/assets/execom/abhi.jpg" },
   { id: 12, name: "ANAKHA M R", designation: "Content Creator", image: "/assets/execom/anakha.jpg" },
+  { id: 13, name: "ATHUL KRISHNA", designation: "IPR & RESEARCH LEAD", image: "/assets/execom/athul.jpg" },
 
 ];
 

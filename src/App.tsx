@@ -112,6 +112,7 @@ const HomePage: React.FC = () => {
                       : "2px solid transparent",
                   transition: "border-color 0.3s ease",
                   cursor: "pointer",
+                  fontFamily: "'cinzel', serif",
                 }}
               >
                 {item}
@@ -128,6 +129,7 @@ const HomePage: React.FC = () => {
             color: "#fff",
             cursor: "pointer",
             display: "none",
+            fontFamily: "'cinzel', serif",
           }}
           onClick={() => setSidebarOpen(true)}
         >

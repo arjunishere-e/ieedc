@@ -33,7 +33,7 @@ const eventsData = [
   {
     title: "Hands-on Raspberry Pi:Linux,Python & IoT",
     description:
-      "A dynamic college event where ideas turn into action and conversations spark collaborations. Built for students who believe learning goes beyond classrooms, it offers workshops, talks, and campfire networking to inspire innovation, break routines, and create meaningful connections.",
+      "A 5-day internship focused on Raspberry Pi, Linux, Python, and IoT, aimed at providing practical experience in embedded systems and real-time applications. The program covers Raspberry Pi setup, GPIO interfacing, Python for hardware control, sensor data processing, and mini-project implementation.",
     image: event4,
     link: "/events/iot", //  Iot photos page
   },
@@ -41,7 +41,7 @@ const eventsData = [
   {
     title: "Artificial Intelligence and Data Science",
     description:
-      "A dynamic college event where ideas turn into action and conversations spark collaborations. Built for students who believe learning goes beyond classrooms, it offers workshops, talks, and campfire networking to inspire innovation, break routines, and create meaningful connections.",
+      "A 5-day internship on Artificial Intelligence and Data Science, conducted by Nest Digital at CE Kallooppara, covering AI fundamentals, Python for Data Science, data visualization, and mini project implementation",
     image: event5,
     link: "/events/ai", //  Ai photos page
   },

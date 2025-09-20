@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import DotGrid from "./DotGrid";
 
 // Dynamically import all JPG images from assets/ai
@@ -8,20 +9,27 @@ const images = Object.values(
 
 const Ai: React.FC = () => {
   const [selectedImg, setSelectedImg] = useState<string | null>(null);
+  const navigate = useNavigate();
+
+  // Close modal and go back to event page
+  const handleClose = () => {
+    setSelectedImg(null);
+    navigate("/events/hexis"); // redirect to event page
+  };
 
   return (
     <div style={{ position: "relative", minHeight: "100vh", color: "#fff" }}>
       {/* DotGrid background */}
       <DotGrid
         dotSize={6}
-        gap={20}
+        gap={25} // slightly fewer dots for better performance
         baseColor="#2a2a2a"
         activeColor="#5227FF" // accent color for AI
-        proximity={120}
-        shockRadius={250}
-        shockStrength={5}
-        resistance={750}
-        returnDuration={1.5}
+        proximity={100} // reduce computations
+        shockRadius={200}
+        shockStrength={3}
+        resistance={600}
+        returnDuration={1.8}
         style={{
           position: "fixed",
           top: 0,
@@ -29,10 +37,20 @@ const Ai: React.FC = () => {
           width: "100%",
           height: "100%",
           zIndex: -1,
+          pointerEvents: "none",
+          willChange: "transform",
+          transform: "translateZ(0)",
         }}
       />
 
-      <h1 style={{ textAlign: "center", padding: "2rem 0", color: "#fff",fontFamily: "'Cinzel', serif" }}>
+      <h1
+        style={{
+          textAlign: "center",
+          padding: "2rem 0",
+          color: "#fff",
+          fontFamily: "'Cinzel', serif",
+        }}
+      >
         AI Event Photos
       </h1>
 
@@ -69,7 +87,7 @@ const Ai: React.FC = () => {
       {/* Popup modal */}
       {selectedImg && (
         <div
-          onClick={() => setSelectedImg(null)}
+          onClick={handleClose}
           style={{
             position: "fixed",
             top: 0,
